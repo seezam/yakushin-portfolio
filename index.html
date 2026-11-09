@@ -8,6 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: "Myriad Pro";
+            src: url("assets/fonts/myriad-pro/myriad-pro-light.otf") format("opentype");
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Myriad Pro";
+            src: url("assets/fonts/myriad-pro/myriad-pro-regular.otf") format("opentype");
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Myriad Pro";
+            src: url("assets/fonts/myriad-pro/myriad-pro-semibold.otf") format("opentype");
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Myriad Pro";
+            src: url("assets/fonts/myriad-pro/myriad-pro-bold.otf") format("opentype");
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,7 +47,7 @@
         }
 
         body {
-            font-family: "Segoe UI Variable", "Segoe UI", "Inter", system-ui, sans-serif;
+            font-family: "Myriad Pro", Myriad, "Segoe UI", "Inter", system-ui, sans-serif;
             background-color: #F9F8F6;
             color: #2C2C2C;
             line-height: 1.6;
@@ -305,6 +337,12 @@
             nav {
                 right: 24px;
             }
+            footer {
+                padding: 28px 20px;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
             .hero {
                 padding: 60px 30px 40px;
             }
@@ -349,21 +387,21 @@
         <h2 class="section-title">ИЗБРАННЫЕ РАБОТЫ</h2>
         
         <div class="gallery-grid">
+            <!-- Портрет художника -->
+            <div class="gallery-item portrait">
+                <img src="assets/images/yak-artist.jpg" alt="Михаил Якушин">
+                <div class="item-info">
+                    <div class="item-title">Михаил Якушин</div>
+                    <div class="item-category">Портрет</div>
+                </div>
+            </div>
+
             <!-- Вертикальная работа -->
             <div class="gallery-item tall">
                 <img src="assets/images/works/kIaquvio.jpg" alt="Утра в Карелии">
                 <div class="item-info">
                     <div class="item-title">Утра в Карелии</div>
                     <div class="item-category">Акварель</div>
-                </div>
-            </div>
-
-            <!-- Портрет художника (ЗАМЕНИТЬ НА СВОЕ ФОТО) -->
-            <div class="gallery-item portrait">
-                <img src="assets/images/yak-artist.jpg" alt="Михаил Якушин">
-                <div class="item-info">
-                    <div class="item-title">Михаил Якушин</div>
-                    <div class="item-category">Портрет</div>
                 </div>
             </div>
 
@@ -431,12 +469,9 @@
     </section>
 
     <footer>
-        <div>© 2024 МИХАИЛ ЯКУШИН</div>
+        <div>© 2026 МИХАИЛ ЯКУШИН</div>
         <div class="social-links">
-            <a href="#">Telegram</a>
-            <a href="#">Behance</a>
-            <a href="#">Instagram</a>
-            <a href="mailto:hello@yakushin.art">hello@yakushin.art</a>
+            <a href="https://seezam.online/">Разработка — seezam.online</a>
         </div>
     </footer>
 
