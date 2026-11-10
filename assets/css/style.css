@@ -198,7 +198,7 @@ nav a:hover {
 
 .artist-intro {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
     gap: 30px;
     margin-bottom: 60px;
 }
@@ -231,6 +231,10 @@ nav a:hover {
 
 .gallery-item.portrait img {
     height: 400px;
+}
+
+.artist-intro .portrait {
+    align-self: start;
 }
 
 .gallery-item.tall {
@@ -273,10 +277,37 @@ nav a:hover {
 }
 
 .about-block p {
-    font-size: 13px;
-    line-height: 1.9;
+    font-size: 15px;
+    line-height: 1.75;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+}
+
+.about-block p.artist-name {
+    color: #2C2C2C;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.about-block a {
+    color: inherit;
+    text-decoration-color: #C8C5BF;
+    text-underline-offset: 3px;
+}
+
+.about-block a:hover {
+    color: #2C2C2C;
+}
+
+.artist-quote {
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 1px solid #D8D5CF;
+    color: #777;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.8;
 }
 
 /* Футер */
@@ -311,15 +342,20 @@ footer {
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    .artist-intro {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
     .gallery-item.tall {
         grid-row: span 1;
     }
     .gallery-item.tall img,
     .gallery-item.portrait img {
         height: 320px;
+    }
+}
+
+@media (max-width: 900px) {
+    .artist-intro {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 40px;
     }
 }
 
