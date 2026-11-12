@@ -290,6 +290,57 @@ nav a:hover {
     margin-bottom: 4px;
 }
 
+.about-block p.artist-summary {
+    margin-bottom: 24px;
+}
+
+.biography-details {
+    border-top: 1px solid #E8E6E1;
+}
+
+.biography-details summary {
+    padding: 16px 0;
+    color: #555;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.biography-details summary:hover {
+    color: #2C2C2C;
+}
+
+.biography-details summary:focus-visible {
+    outline: 1px solid #888;
+    outline-offset: 4px;
+}
+
+.biography-content {
+    padding-top: 8px;
+}
+
+.biography-section {
+    margin-bottom: 28px;
+}
+
+.biography-section h4 {
+    margin-bottom: 10px;
+    color: #2C2C2C;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.biography-section p {
+    margin-bottom: 12px;
+}
+
+.biography-section strong {
+    color: #3D3D3D;
+    font-weight: 600;
+}
+
 .about-block a {
     color: inherit;
     text-decoration-color: #C8C5BF;
