@@ -64,6 +64,19 @@ header {
     font-weight: 300;
 }
 
+.header-notice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #B24A4A;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
 .menu-toggle {
     position: relative;
     width: 44px;
@@ -412,7 +425,15 @@ footer {
 
 @media (max-width: 768px) {
     header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
         padding: 16px 24px;
+    }
+    .header-notice {
+        position: static;
+        grid-column: 1 / -1;
+        justify-self: center;
+        transform: none;
     }
     nav {
         right: 24px;
