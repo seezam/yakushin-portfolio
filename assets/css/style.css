@@ -387,7 +387,8 @@ footer {
 
 .social-links {
     display: flex;
-    gap: 30px;
+    align-items: baseline;
+    gap: 6px;
 }
 
 .social-links a {
@@ -395,6 +396,18 @@ footer {
     text-decoration: none;
     letter-spacing: 0.5px;
     transition: color 0.3s;
+}
+
+.social-links a.developer-brand {
+    background: linear-gradient(90deg, #00cfc8 0%, #3786e5 62%, #8050d5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #3786e5;
+    -webkit-text-fill-color: transparent;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .social-links a:hover {
