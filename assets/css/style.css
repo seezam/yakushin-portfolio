@@ -137,15 +137,40 @@ nav {
     position: absolute;
     top: calc(100% + 12px);
     right: 60px;
+    z-index: 2;
     min-width: 220px;
     padding: 12px 0;
-    background: #F9F8F6;
-    border: 1px solid #E8E6E1;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    background: #fff;
+    border: 1px solid #D8D5CF;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-8px);
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.menu-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: rgba(32, 32, 32, 0.16);
+    backdrop-filter: blur(1px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s;
+}
+
+header.menu-open .menu-backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+header.menu-open .menu-toggle {
+    z-index: 3;
 }
 
 header.menu-open nav {

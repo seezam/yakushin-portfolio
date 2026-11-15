@@ -1,5 +1,6 @@
 const header = document.querySelector("header");
 const menuToggle = document.querySelector(".menu-toggle");
+const menuBackdrop = document.querySelector(".menu-backdrop");
 const menuLinks = document.querySelectorAll("#site-menu a");
 
 function setMenuOpen(isOpen) {
@@ -11,6 +12,8 @@ function setMenuOpen(isOpen) {
 menuToggle.addEventListener("click", () => {
     setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
 });
+
+menuBackdrop.addEventListener("click", () => setMenuOpen(false));
 
 menuLinks.forEach((link) => {
     link.addEventListener("click", () => setMenuOpen(false));
