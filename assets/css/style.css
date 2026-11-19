@@ -100,7 +100,7 @@ nav a:focus-visible {
 .menu-icon::after {
     position: absolute;
     width: 24px;
-    height: 1px;
+    height: 2px;
     background: currentColor;
     transition: transform 0.3s ease, top 0.3s ease;
 }
